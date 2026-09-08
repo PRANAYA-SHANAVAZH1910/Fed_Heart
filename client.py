@@ -29,8 +29,8 @@ class HeartDiseaseModel(nn.Module):
 # --- 2. DATA LOAD HELPER ---
 def load_hospital_data(hospital_id: int):
     """Loads a single hospital dataset split (prefers augmented data if present)."""
-    augmented_path = f"/Users/pranaya.shanavazh/Downloads/Gemini_split_new/Hospital_1_data.csv"
-    standard_path = f"/Users/pranaya.shanavazh/Downloads/Gemini_split_new/Hospital_1_data.csv"
+    augmented_path = f"/Users/pranaya.shanavazh/Downloads/Gemini_split_new/Hospital_2_data.csv"
+    standard_path = f"/Users/pranaya.shanavazh/Downloads/Gemini_split_new/Hospital_2_data.csv"
     
     file_path = augmented_path if os.path.exists(augmented_path) else standard_path
     df = pd.read_csv(file_path)

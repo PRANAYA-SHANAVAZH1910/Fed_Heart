@@ -1,0 +1,12 @@
+source .venv312/bin/activate
+
+
+python server_similarity_visualized.py \
+--address 10.1.0.138:8080 \
+--rounds 10 \
+--min-clients 6 \
+--clusters 2 \
+--recluster-interval 5
+
+
+python test_client.py 1

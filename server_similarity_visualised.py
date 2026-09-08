@@ -1961,7 +1961,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--address",
         type=str,
-        default="10.1.6.170:8080",
+        default="10.1.16.145:8080",
         help=(
             "Server address in HOST:PORT format."
         ),
